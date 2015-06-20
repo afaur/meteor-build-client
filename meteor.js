@@ -55,7 +55,7 @@ module.exports = {
         // remove the bundle folder
         deleteFolderRecursive(buildPath);
 
-        var command = 'meteor build '+ argPath + ' --directory';
+        var command = 'meteor build '+ argPath + ' --directory --debug';
 
         if(program.url)
              command += ' --server '+ program.url;
